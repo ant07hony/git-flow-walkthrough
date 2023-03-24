@@ -1,0 +1,29 @@
+<%- include('../partials/header', { title }) %>
+
+<form action="/foods" method="POST" class="new-form">
+    <label>Title:
+        <input type="text" name="title" required>
+    </label>
+    <label>Release Year:
+        <input type="number" name="releaseYear">
+    </label>
+    <label>MPAA Rating
+        <select name="mpaaRating">
+            <option value="G">G</option>
+            <option value="PG">PG</option>
+            <option value="PG-13">PG-13</option>
+            <option value="R">R</option>
+        </select>
+    </label>
+    <!-- <label>Cast (separate actors with commas):
+        <input type="text" name="cast">
+    </label> -->
+    <label>Now Showing:
+        <input type="checkbox" name="nowShowing" checked>
+    </label>
+    <button type="submit">Add Movie</button>
+</form>
+
+
+
+<%- include('../partials/footer') %>
